@@ -5,6 +5,7 @@ const classroomController = require('../controllers').classroom;
 const studentController = require('../controllers').student;
 const lecturerController = require('../controllers').lecturer;
 const courseController = require('../controllers').course;
+const userController = require('../controllers/userController')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -43,5 +44,11 @@ router.delete('/api/course/:id', courseController.delete);
 router.post('/api/student/add_course', studentController.addCourse);
 router.post('/api/classroom/add_with_students', classroomController.addWithStudents);
 router.post('/api/lecturer/add_with_course', lecturerController.addWithCourse);
+
+/*  User Routes */
+router.post('/api/user', userController.createUser)
+router.get('/api/user/:id', userController.getUser)
+router.put('/api/user/:id', userController.updateUser)
+router.get('/api/users', userController.getUsers)
 
 module.exports = router;
