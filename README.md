@@ -13,3 +13,7 @@ To run locally:
 * Run `npm install` or `yarn install`
 * Run `sequelize db:migrate`
 * Run `nodemon` or `npm start`
+
+### Example commands:
+* To add migration: `sequelize model:generate --name User --attributes firstName:string,lastName:string,email:string`
+* To run migration: `sequelize db:migrate`
