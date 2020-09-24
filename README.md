@@ -1,4 +1,6 @@
-#INZINT
+# INZINT
+
+## Demo app using NodeJs, ExpressJs, Postgresql and Sequelize
 
 Install globally
 * `npm install -g sequelize-cli`
