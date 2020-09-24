@@ -15,7 +15,7 @@ To run locally:
 * Run `nodemon` or `npm start`
 
 ### Example commands:
-* To add migration: 
+* To add migration:   
 `sequelize model:generate --name User --attributes firstName:string,lastName:string,email:string`
-* To run migration: 
+* To run migration:   
 `sequelize db:migrate`
